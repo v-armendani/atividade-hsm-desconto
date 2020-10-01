@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+
+<html>
+
+    <head>
+    	<meta charset=“utf-8”>
+    </head>
+
+    <body>
+
+        <script>
+
+        function desconto(){
+
+        var desconto1 = 0.1;
+        var desconto2 = 0.15; 
+        var valorCompra = prompt("Digite o valor da compra");
+        var valorDesconto = 0;
+        var valorFinal = 0;
+
+            if (valorCompra < 500){
+                
+                valorDesconto = (valorCompra * desconto1);
+                valorFinal = (valorCompra - valorDesconto);
+
+                return ("O desconto aplicado foi " + (desconto1 * 100) + "%" + <br> + "O valor do desconto foi R$" + valorDesconto + <br> + "O valor a ser pago é R$" + valorFinal);
+            } else {
+                
+                valorDesconto = (valorCompra * desconto2);
+                valorFinal = (valorCompra - valorDesconto);
+                
+                return ("O desconto aplicado foi " + (desconto2 * 100) + "%" + <br> + "O valor do desconto foi R$" + valorDesconto + <br> + "O valor a ser pago é R$" + valorFinal);
+            }
+        }
+       
+        </script>
+
+    </body>
+
+</html>
